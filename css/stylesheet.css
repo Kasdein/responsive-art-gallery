@@ -1,54 +1,68 @@
+/* removes default margin of the page an sets the width an height properties to "border-box" */
 * {
     margin: 0;
     box-sizing: border-box;
 }
 
+/* defines default text for the page and sets the page's margin to 20 */
 body {
     text-transform: capitalize;
     margin: 20px;
     font-family: monospace;
 }
 
+/* text size */
 h1 {
     font-size: 2.5rem;
 }
 
+/* text properties and sets a border */
 h4 {
     font-size: 1rem;
     text-transform: uppercase;
-    border: 5px solid rgb(255, 132, 150);
+    border: 5px solid rgb(191, 123, 35);
+    border-radius: 3px;
 }
 
+/* forces the image to fill the with of the container */
 img {
     width: 100%;
 }
 
+/* text properties */
 a {
     color:rgb(84, 75, 145);
     text-decoration: none;
 }
 
+/* various properties for the "header" id */
 #header {
     text-align: center;
-    background-color:rgb(255, 214, 160);
+    background-color:rgb(235, 177, 97);
     padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
+/* sets a flex display to allow the "row" container (an it's contents) to addapt to screen size  */
 #row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px;
-    border: 2px solid burlywood;
+    border: 4px solid rgb(191, 123, 35);
+    border-radius: 10px;
 }
 
+/* sets flex growth factor to 1 and the "column" class to fill a third of the page */
 .column {
     flex: 1;
     padding: 15px;
     min-width: 33%;
 }
 
-.column-img {
+/* adds various properties to the image and aligns it to the center of a column */
+.columnImage {
     margin: 5px;
     vertical-align: middle;
     margin-left: auto;
@@ -56,56 +70,66 @@ a {
     margin-top: 20px;
 }
 
+/* adds various properties to the "container" id */
 #container {
-    background-color: blanchedalmond;
-    flex: 1;
+    background-color: rgb(255, 250, 204);
     padding: 15px;
     margin-bottom: 20px;
-    font-family: monospace;
+    border-radius: 10px;
 }
 
+/* adds various propeties to the "textContainer" id */
 #textContainer {
-    background-color: blanchedalmond;
-    display: flex;
-    flex: 1;
     padding-right: 15px;
     padding-bottom: 15px;
     padding-top: 15px;
-    font-family: monospace;
 }
 
+/* sets background color and align the text for the mutliple "colX" ids */
 #col1 {
-    background-color: rgb(164, 255, 164);
+    background-color: rgb(255, 250, 204);
     text-align: center;
 }
-
 #col2 {
-    background-color: rgb(164, 255, 164);
+    background-color: rgb(255, 250, 204);
     text-align: center;
 }
-
 #col3 {
-    background-color: rgb(164, 255, 164);
+    background-color: rgb(255, 250, 204);
     text-align: center;
 }
-
 #col4 {
-    background-color: rgb(164, 255, 164);
+    background-color: rgb(255, 250, 204);
     text-align: center;
 }
-
 #col5 {
-    background-color: rgb(164, 255, 164);
+    background-color: rgb(255, 250, 204);
     text-align: center;
 }
-
 #col6 {
-    background-color: rgb(164, 255, 164);
+    background-color: rgb(255, 250, 204);
     text-align: center;
 }
 
+/* specifies extra margin for <p> in "column" class containers */
 .column p {
     margin: 10px;
+}
+
+/* sets the flex display and adds various properties to the footer id */
+#footer {
+    width: 75%;
+    font-size: 1rem;
+    padding: 15px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: rgb(200, 205, 255);
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 12px;
 }
 
 /* optimised for tablet  */
@@ -163,17 +187,4 @@ a {
     #footer {
         font-size: 1.5rem;
     }
-}
-
-#footer {
-    width: 75%;
-    font-size: 1rem;
-    padding: 15px;
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    background-color: rgb(116, 220, 255);
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
 }
